@@ -1,5 +1,5 @@
 # pubsub
-simple publisher / subscriber application with different methods
+# simple publisher / subscriber application with different methods
 
 
 For start redis publisher server :
