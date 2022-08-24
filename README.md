@@ -41,7 +41,7 @@ $ make serverGo
 ```
 
 <br/><br/>
-benchmark GO redis kafka or rabbitmq:
+benchmark golang, redis, kafka or rabbitmq:
 ```
  ab -k -p json.txt -T aplication/json -n 100000 -c 100 -t 1000  http://127.0.0.1:3000/pubsub-{YOUR-METHOD}}}/
 ```
