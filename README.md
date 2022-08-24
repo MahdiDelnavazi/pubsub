@@ -49,7 +49,7 @@ benchmark GO redis kafka or rabbitmq:
 <br/>
 ***results
 <br/>
-![Result](result.png)
+<img src="result.png" alt="Alt text" >
 
 
 
