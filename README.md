@@ -1,5 +1,5 @@
 # pubsub
-simple publisher / subscriber application with different methods 
+simple publisher / subscriber application with different methods
 
 
 For start redis publisher server :
@@ -11,6 +11,7 @@ For start redis subscriber server :
 ```
 $ make serverSubscriberRedis
 ```
+<br/>
 
 For start kafka publisher server :
 ```
@@ -21,6 +22,7 @@ For start kafka subscriber server :
 ```
 $ make serverSubscriberKafka
 ```
+<br/>
 
 For start rabbitmq publisher server :
 ```
@@ -31,30 +33,23 @@ For start rabbitmq subscriber server :
 ```
 $ make serverSubscriberRabbitmq
 ```
+<br/>
 
 For start go publisher and subscriber server :
 ```
 $ make serverGo
 ```
 
-benchmark GO:
+<br/><br/>
+benchmark GO redis kafka or rabbitmq:
 ```
- ab -k -p json.txt -T aplication/json -n 100000 -c 100 -t 1000  http://127.0.0.1:3000/pubsub-golang}}/
-```
-
-benchmark Redis:
-```
- ab -k -p json.txt -T aplication/json -n 100000 -c 100 -t 1000  http://127.0.0.1:3000/pubsub-redis}}/
+ ab -k -p json.txt -T aplication/json -n 100000 -c 100 -t 1000  http://127.0.0.1:3000/pubsub-{YOUR-METHOD}}}/
 ```
 
-benchmark rabbitmq:
-```
- ab -k -p json.txt -T aplication/json -n 100000 -c 100 -t 1000  http://127.0.0.1:3000/pubsub-rabbitmq}}/
-```
+<br/>
+***results
+![Result](result.png)
 
 
-benchmark kafka:
-```
- ab -k -p json.txt -T aplication/json -n 100000 -c 100 -t 1000  http://127.0.0.1:3000/pubsub-kafka}}/
-```
+
 
